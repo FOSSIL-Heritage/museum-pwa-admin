@@ -41,7 +41,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
                 >
-                  Device
+                  Project
                 </th>
                 <th
                   className={
@@ -71,6 +71,16 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
                 >
+                  Users
+                </th>
+                <th
+                  className={
+                    "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                    (color === "light"
+                      ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                      : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                  }
+                >
                   Crowding
                 </th>
                 <th
@@ -87,7 +97,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={require("assets/img/camera.png").default}
+                    src={require("assets/img/artworks/pictures/01.jpeg").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -97,24 +107,47 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Camera #uuid-10
+                    La Velata
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  Area C
+                  Area A
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-orange-500 mr-2"></i> warning
+                  <i className="fas fa-circle text-emerald-500 mr-2"></i> exposed
                 </td>
-                
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex">
+                    <img
+                      src={require("assets/img/team-1-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-2-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-3-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-4-470x470.png").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                  </div>
+                </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
                     <span className="mr-2">60%</span>
                     <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-orange-200">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
                         <div
                           style={{ width: "60%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
                         ></div>
                       </div>
                     </div>
@@ -127,7 +160,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={require("assets/img/camera.png").default}
+                    src={require("assets/img/artworks/pictures/02.jpeg").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -137,7 +170,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Camera uuid-11
+                    Icona Menologio
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -145,17 +178,40 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}
-                  on
+                  exposed
                 </td>
-                
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex">
+                    <img
+                      src={require("assets/img/team-1-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-2-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-3-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-4-470x470.png").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                  </div>
+                </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
                     <span className="mr-2">100%</span>
                     <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-emerald-200">
                         <div
                           style={{ width: "100%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
                         ></div>
                       </div>
                     </div>
@@ -168,7 +224,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={require("assets/img/camera.png").default}
+                    src={require("assets/img/artworks/pictures/03.jpeg").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -178,23 +234,46 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Camera uuid-13
+                    Nascita di Venere
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  Area 1
+                  Area A
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-red-500 mr-2"></i> off
+                  <i className="fas fa-circle text-red-500 mr-2"></i> not exposed
                 </td>
-                
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex">
+                    <img
+                      src={require("assets/img/team-1-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-2-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-3-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-4-470x470.png").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                  </div>
+                </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
-                    <span className="mr-2">0%</span>
+                    <span className="mr-2">73%</span>
                     <div className="relative w-full">
                       <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
                         <div
-                          style={{ width: "100%" }}
+                          style={{ width: "73%" }}
                           className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
                         ></div>
                       </div>
@@ -208,7 +287,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={require("assets/img/camera.png").default}
+                    src={require("assets/img/artworks/pictures/04.png").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -218,24 +297,47 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Camera uuid-15
+                    Icona Madre
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  Area C
+                  Area B
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-emerald-500 mr-2"></i> on
+                  <i className="fas fa-circle text-teal-500 mr-2"></i> exposed
                 </td>
-                
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex">
+                    <img
+                      src={require("assets/img/team-1-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-2-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-3-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-4-470x470.png").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                  </div>
+                </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
                     <span className="mr-2">90%</span>
                     <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-teal-200">
                         <div
                           style={{ width: "90%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-500"
                         ></div>
                       </div>
                     </div>
@@ -248,7 +350,7 @@ export default function CardTable({ color, title = 'Card Tables' }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={require("assets/img/camera.png").default}
+                    src={require("assets/img/artworks/pictures/05.jpeg").default}
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -258,25 +360,48 @@ export default function CardTable({ color, title = 'Card Tables' }) {
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Camera uuid-16
+                    Sacra Famiglia
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  Area F
+                  Area G
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}
-                  on
+                  exposed
                 </td>
-                
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                  <div className="flex">
+                    <img
+                      src={require("assets/img/team-1-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-2-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-3-800x800.jpg").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                    <img
+                      src={require("assets/img/team-4-470x470.png").default}
+                      alt="..."
+                      className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
+                    ></img>
+                  </div>
+                </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex items-center">
                     <span className="mr-2">100%</span>
                     <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
+                      <div className="overflow-hidden h-2 text-xs flex rounded bg-emerald-200">
                         <div
                           style={{ width: "100%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
                         ></div>
                       </div>
                     </div>

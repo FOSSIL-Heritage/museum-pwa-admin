@@ -15,28 +15,32 @@ export default function Login() {
                   </h6>
                 </div>
                 <div className="btn-wrapper text-center">
-                  <button
-                    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    <img
-                      alt="..."
-                      className="w-5 mr-1"
-                      src={require("assets/img/github.svg").default}
-                    />
-                    Github
-                  </button>
-                  <button
-                    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    <img
-                      alt="..."
-                      className="w-5 mr-1"
-                      src={require("assets/img/google.svg").default}
-                    />
-                    Google
-                  </button>
+                  <Link to="/admin">
+                    <button
+                      className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                      type="button"
+                    >
+                      <img
+                        alt="..."
+                        className="w-5 mr-1"
+                        src={require("assets/img/github.svg").default}
+                      />
+                      Github
+                    </button>
+                  </Link>
+                  <Link to="/admin">
+                    <button
+                      className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                      type="button"
+                    >
+                      <img
+                        alt="..."
+                        className="w-5 mr-1"
+                        src={require("assets/img/google.svg").default}
+                      />
+                      Google
+                    </button>
+                  </Link>
                 </div>
                 <hr className="mt-6 border-b-1 border-blueGray-300" />
               </div>
@@ -55,7 +59,7 @@ export default function Login() {
                     <input
                       type="email"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Email"
+                      placeholder="admin@mail.it"
                     />
                   </div>
 
@@ -69,7 +73,7 @@ export default function Login() {
                     <input
                       type="password"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Password"
+                      placeholder="*********"
                     />
                   </div>
                   <div>
@@ -86,12 +90,14 @@ export default function Login() {
                   </div>
 
                   <div className="text-center mt-6">
-                    <button
-                      className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      Sign In
-                    </button>
+                    <Link to="/admin">
+                      <button
+                        className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                        type="button"
+                      >
+                        Sign In
+                      </button>
+                    </Link>
                   </div>
                 </form>
               </div>
