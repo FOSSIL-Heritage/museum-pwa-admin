@@ -20,7 +20,7 @@ RUN npm run build --production
 RUN npm install -g serve
 
 # Uses port which is used by the actual application
-EXPOSE 5000
+EXPOSE 3000
 
 # Run application
 #CMD [ "npm", "start" ]
