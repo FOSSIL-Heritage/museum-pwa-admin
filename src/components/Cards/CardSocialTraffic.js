@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://127.0.0.1:3002";
+const ENDPOINT = "http://35.193.220.65:8082/api/crowd-monitoring";
 // components
 
 export default function CardSocialTraffic() {
